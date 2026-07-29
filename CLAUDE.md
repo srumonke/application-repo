@@ -32,7 +32,7 @@ mvn clean test
 mvn package
 
 # Run locally (app starts on port 8080)
-java -jar target/demo-app-1.0.0.jar
+java -jar target/demo-app-4.1.0.jar
 
 # Run single test class
 mvn test -Dtest=HealthControllerTest
