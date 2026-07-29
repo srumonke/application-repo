@@ -1,0 +1,10 @@
+# Accepted-risk CVE exceptions for the shift-left scan gate.
+# Each entry MUST have a documented justification and (ideally) an expiry/tracking ticket.
+#
+# These are CRITICAL CVEs in Spring Boot 3.3.2's transitive Tomcat (tomcat-embed-core 10.1.26).
+# They are OUT OF SCOPE for hotfix CVE-2026-9999, which targets commons-text (Text4Shell).
+# Risk-accepted for this hotfix line; framework upgrade tracked separately (JIRA: PLAT-1234).
+CVE-2025-24813
+CVE-2026-41293
+CVE-2026-43512
+CVE-2026-43515
