@@ -14,7 +14,7 @@
 
     <groupId>com.harness</groupId>
     <artifactId>demo-app</artifactId>
-    <version>1.0.0</version>
+    <version>4.1.0</version>
     <name>demo-app</name>
     <description>Minimal Spring Boot application for CI/CD demo on Harness</description>
 
@@ -28,6 +28,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Used by GreetingService for input interpolation.
+             NOTE: 1.9 is vulnerable to CVE-2022-42889 (Text4Shell). -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.9</version>
         </dependency>
 
         <dependency>
