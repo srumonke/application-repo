@@ -101,3 +101,4 @@ Git stays the single source of truth: prod changes only through a merged PR in `
 When adding an endpoint: add the controller method, a response record in `model/`, and a
 `@WebMvcTest` covering it, then `mvn clean test`.
 
+
